@@ -1,3 +1,4 @@
+
 (function($) {
     // 本函数每次调用只负责一个轮播图的功能
     // 也就是说只会产生一个轮播图，这个函数的作用域只能分配给一个轮播图
@@ -17,13 +18,13 @@
         $.extend(true, setting, options);
         // 规定好每张图片处于的位置和状态
         var states = [
-            { $zIndex: 1, width: 120, height: 150, top: 69, left: 134, $opacity: 0.2 },
-            { $zIndex: 2, width: 130, height: 170, top: 59, left: 0, $opacity: 0.4 },
-            { $zIndex: 3, width: 170, height: 218, top: 35, left: 110, $opacity: 0.7 },
-            { $zIndex: 4, width: 224, height: 288, top: 0, left: 263, $opacity: 1 },
-            { $zIndex: 3, width: 170, height: 218, top: 35, left: 470, $opacity: 0.7 },
-            { $zIndex: 2, width: 130, height: 170, top: 59, left: 620, $opacity: 0.4 },
-            { $zIndex: 1, width: 120, height: 150, top: 69, left: 500, $opacity: 0.2 }
+            { $zIndex: 1, width: 150, height: 150, top: 69, left: 134, $opacity: 0.2 },
+            { $zIndex: 2, width: 160, height: 170, top: 59, left: 0, $opacity: 0.4 },
+            { $zIndex: 3, width: 200, height: 218, top: 35, left: 110, $opacity: 0.7 },
+            { $zIndex: 4, width: 254, height: 288, top: 0, left: 263, $opacity: 1 },
+            { $zIndex: 3, width: 200, height: 218, top: 35, left: 470, $opacity: 0.7 },
+            { $zIndex: 2, width: 160, height: 170, top: 59, left: 620, $opacity: 0.4 },
+            { $zIndex: 1, width: 150, height: 150, top: 69, left: 500, $opacity: 0.2 }
         ];
 
         var $lis = $ele.find('li');

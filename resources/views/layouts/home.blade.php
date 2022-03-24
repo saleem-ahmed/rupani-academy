@@ -19,17 +19,19 @@
             </button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-item active" data-bs-interval="9000">
                 <img src="{{ asset('Frontend') }}/Assests/bg-header-img1.png" class="d-block w-100 " alt="...">
                 <div class="carousel-caption d-none d-md-block text-white">
-                    <h3>Primary Year Programme</h3>
-                    <p>We aim to prepare students to become active and compassionate lifelong learners exhibiting
-                        reverence for the locale, respect for the diverse communities and have the aptitude to
-                        contribute globally. </p>
+                    <h3>Rupani Academy</h3>
+                    <p>Rupani Academy is a candidate school for the International Baccalaureate (IB) Primary Years
+                        Programme (PYP) and pursuing authorization as an IB World School. IB World Schools share a
+                        common philosophy a commitment to provide authentic teaching and learning opportunities via the
+                        high-quality and international educational programme, challenging students’ inquiry and
+                        curiosity to be lifelong learners in a diverse global world.</p>
                     <a class="btn text-white">learn more</a>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item">
                 <img src="{{ asset('Frontend') }}/Assests/bg-header-img2.png" class="d-block w-100 " alt="...">
                 <div class="carousel-caption d-none d-md-block text-white">
                     <h3>IB Candidate School</h3>
@@ -73,7 +75,7 @@
         </button>
     </div>
 </div>
-<div class="apply-now">
+<div class="apply-now wow animate__animated animate__fadeInUpBig">
     <div class="container">
         <div class="row">
             <div class="col-4">
@@ -89,7 +91,7 @@
         </div>
     </div>
 </div>
-<div class="about-section">
+{{-- <div class="about-section">
     <div class="container-md">
         <div class="row justify-content-center">
             <div class="col-6">
@@ -124,39 +126,32 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+
 <div class="mission">
     <div id="mission-carosel" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#mission-carosel" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1">
-                <i class="fa-solid fa-eye"></i>
-            </button>
-            <button type="button" data-bs-target="#mission-carosel" data-bs-slide-to="1" aria-label="Slide 2">
-                <i class="fa-solid fa-bullseye"></i>
-            </button>
-            <button type="button" data-bs-target="#mission-carosel" data-bs-slide-to="2" aria-label="Slide 3">
+            <button type="button" data-bs-target="#mission-carosel" data-bs-slide-to="1" aria-label="Slide 1">
                 <i class="fa-solid fa-check-double"></i>
             </button>
+            <button type="button" data-bs-target="#mission-carosel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 2">
+                <i class="fa-solid fa-eye"></i>
+            </button>
         </div>
-
-
-
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col">
-                            <h2>Our Aim</h2>
-                            <p>Provision of quality education of the International standards to the young generation for
-                                sustainable development of locale, Pakistan, and the Global Community.</p>
+                        <div class="col-8  wow animate__animated animate__fadeInUpBig">
+                            <h2>Our Vission</h2>
+                            <p>To provide quality education focusing on life skills and personality development for the
+                                upbringing of a generation of productive and contributing global citizens.</p>
                             <a class="btn" href="">learn More</a>
-
                         </div>
-                        <div class="col ">
-                            <img class="w-100 img-fluid" src="{{ asset('Frontend') }}/Assests/curosel-img.png"
-                                alt="">
+                        <div class="col-4 mission-img  wow animate__animated animate__fadeInUpBig">
+                            <img class="img-fluid" src="{{ asset('Frontend') }}/Assests/mission-img.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -164,29 +159,14 @@
             <div class="carousel-item">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col">
+                        <div class="col-8  wow animate__animated animate__fadeInUpBig">
                             <h2>Our Mission</h2>
                             <p>Provision of quality education of the International standards to the young generation for
                                 sustainable development of locale, Pakistan, and the Global Community.</p>
                             <a class="btn" href="">learn More</a>
                         </div>
-                        <div class="col">
-                            <img class="w-100" src="{{ asset('Frontend') }}/Assests/curosel-img.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col">
-                            <h2>Our Vission</h2>
-                            <p>Provision of quality education of the International standards to the young generation for
-                                sustainable development of locale, Pakistan, and the Global Community.</p>
-                            <a class="btn" href="">learn More</a>
-                        </div>
-                        <div class="col">
-                            <img class="w-100" src="{{ asset('Frontend') }}/Assests/curosel-img.png" alt="">
+                        <div class="col-4 mission-img  wow animate__animated animate__fadeInUpBig">
+                            <img class="img-fluid" src="{{ asset('Frontend') }}/Assests/mission-img.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -206,34 +186,35 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <hr class="bg-danger" style="height: 1px; width: 100%">
+    {{-- <hr class="bg-danger" style="height: 1px; width: 100%"> --}}
 </div>
+
 <div class="campus-life py-4">
-    <div class="container">
+    <div class="container wrappe">
         <div class="row justify-content-center my-5">
             <div class="col-5 d-flex justify-content-center">
                 <h2 class="px-3">Campus Life</h2>
             </div>
         </div>
         <div class="row cards">
-            <div class="col  card-one">
-                <div class="card" style="width: 18rem;">
+            <div class="col cell card-one wow animate__animated animate__fadeInUpBig">
+                <div class="card">
                     <img src="{{ asset('Frontend') }}/Assests/card-img1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title" style="    font-size: 1rem;">Science and Exploration Lab</h5>
+                        <h5 class="card-title" style="font-size: 1rem;">Science and Exploration Lab</h5>
                     </div>
                 </div>
             </div>
-            <div class="col  card-two">
-                <div class="card" style="width: 18rem;">
+            <div class="col cell card-two wow animate__animated animate__fadeInUpBig">
+                <div class="card">
                     <img src="{{ asset('Frontend') }}/Assests/card-img2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Library</h5>
                     </div>
                 </div>
             </div>
-            <div class="col  card-three">
-                <div class="card" style="width: 18rem;">
+            <div class="col cell card-three wow animate__animated animate__fadeInUpBig">
+                <div class="card">
                     <img src="{{ asset('Frontend') }}/Assests/card-img3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Computer Lab</h5>
@@ -248,19 +229,19 @@
         </div>
     </div>
 </div>
-<div class="approch p-5">
+{{-- <div class="approch p-5">
     <div class="container">
         <div class="row">
             <div class="col-6 mx-auto">
                 <h2>Approaches To Learning</h2>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 mx-auto">
                 <div class="col mb-3 d-flex flex-column justify-content-center align-items-center">
                     <img src="{{ asset('Frontend') }}/Assests/thinking.png" alt="">
                     <h3>Thinking <br>
                         Skills</h3>
                 </div>
-                <div class="col mb-3 d-flex flex-column justify-content-center align-items-center">
+                <div class="col mb-3 d-flex flex-column justify-content-center align-items-center flex-wrap">
                     <img src="{{ asset('Frontend') }}/Assests/socail.png" alt="">
                     <h3>Social <br>
                         Skills</h3>
@@ -283,8 +264,8 @@
             </div>
         </div>
     </div>
-</div>
-<div class="gallery">
+</div> --}}
+<div class="gallery my-5 wow animate__animated animate__fadeInUpBig animate__backInUp">
     <div class="container-fuild">
         <div class="row justify-content-center my-5">
             <div class="col-5 d-flex justify-content-center">
@@ -325,7 +306,7 @@
         </div>
     </div>
 </div>
-<div class="news-event p-5">
+<div class="news-event wow animate__animated animate__fadeInUpBig">
     <div class="container d-flex my-5">
         <div class="news d-flex flex-column">
             <div class="row">
@@ -372,9 +353,7 @@
                         <img src="{{ asset('Frontend') }}/Assests/black-news.png" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Event 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up
-                                the
-                                bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
                         </div>
                     </div>
                 </div>
@@ -383,9 +362,7 @@
                         <img src="{{ asset('Frontend') }}/Assests/black-news.png" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Event 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up
-                                the
-                                bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
                         </div>
                     </div>
                 </div>
@@ -394,9 +371,7 @@
                         <img src="{{ asset('Frontend') }}/Assests/black-news.png" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Event 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up
-                                the
-                                bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
                         </div>
                     </div>
                 </div>
