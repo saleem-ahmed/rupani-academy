@@ -40,10 +40,10 @@
         <div class="Nav-bar">
             <div class="container">
                 <div class="row nav-content w-100 ">
-                    <div class="col-2 rupani-acdmey">
+                    <div class="col-2 rupani-acdmey d-flex justify-content-center">
                         <img src="{{ asset('Frontend') }}/Assests/navbar_Rupani_Logo.png" alt="rupani-acdmey-logo">
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 d-flex justify-content-center">
                         <ul class="nav-links" style="color: white">
                             <!-- USING CHECKBOX HACK -->
                             <input type="checkbox" id="checkbox_toggle" />
@@ -66,7 +66,7 @@
                             </div>
                           </ul>
                     </div>
-                    <div class="col-2 rupani-school">
+                    <div class="col-2 rupani-school d-flex justify-content-center">
                         <img src="{{ asset('Frontend') }}/Assests/navbar_school.png" alt="rupani-school-logo">
                     </div>
                 </div>

@@ -98,23 +98,27 @@ input[type="checkbox"] {
 }
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
-    ul.nav-links {
+    /* ul.nav-links {
         position: relative;
         left: 163px;
+    } */
+    .Nav-bar .rupani-acdmey img ,
+    .Nav-bar .rupani-school img {
+        width: 40px;
     }
     .menu {
         display: none;
         position: absolute;
         background: linear-gradient(90.62deg, #f2eeef 0%, #110f38 100%);
         right: 0;
-        left: -201px;
+        /* left: -201px; */
         text-align: center;
         padding: 16px 0;
-        width: 500px;
+        width: 100%;
     }
     .menu li:hover {
         display: inline-block;
-        background-color: #4c9e9e;
+        background-color: #ecf3f3;
         transition: 0.3s ease;
     }
     .menu li + li {
