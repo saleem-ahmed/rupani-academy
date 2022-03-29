@@ -52,11 +52,11 @@
             <div class="carousel-item">
                 <img src="{{ asset('Frontend') }}/Assests/bg-header-img4.png" class="d-block w-100 " alt="...">
                 <div class="carousel-caption d-none d-md-block text-white">
-                    <h3> Best Learnig
+                    <h3> Best learning
                         Environment</h3>
 
-                    <p>PYP emphases on the holistic growth of the child as an inquirer by transcending boundaries of the
-                        classroom through transdisciplinary learning approach.</p>
+                    <p>PYP emphasises on the holistic growth of the child as an inquirer by transcending boundaries of the
+                        classroom through a transdisciplinary learning approach.</p>
                     <a class="btn text-white">learn more</a>
                 </div>
             </div>
@@ -145,7 +145,7 @@
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-8  wow animate__animated animate__fadeInUpBig">
-                            <h2>Our Vission</h2>
+                            <h2>Our Vision</h2>
                             <p>To provide quality education focusing on life skills and personality development for the
                                 upbringing of a generation of productive and contributing global citizens.</p>
                             <a class="btn" href="">learn More</a>
@@ -192,12 +192,12 @@
 <div class="campus-life py-4">
     <div class="container wrappe">
         <div class="row justify-content-center my-5">
-            <div class="col-5 d-flex justify-content-center">
+            <div class="col-lg-5 col-md-10 d-flex justify-content-center">
                 <h2 class="px-3">Campus Life</h2>
             </div>
         </div>
         <div class="row cards">
-            <div class="col cell card-one wow animate__animated animate__fadeInUpBig">
+            <div class="col card-one wow animate__animated animate__fadeInUpBig">
                 <div class="card">
                     <img src="{{ asset('Frontend') }}/Assests/card-img1.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -205,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col cell card-two wow animate__animated animate__fadeInUpBig">
+            <div class="col card-two wow animate__animated animate__fadeInUpBig">
                 <div class="card">
                     <img src="{{ asset('Frontend') }}/Assests/card-img2.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -213,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col cell card-three wow animate__animated animate__fadeInUpBig">
+            <div class="col card-three wow animate__animated animate__fadeInUpBig">
                 <div class="card">
                     <img src="{{ asset('Frontend') }}/Assests/card-img3.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -222,8 +222,8 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-2">
+        <div class="row justify-content-sm-center align-items-sm-center">
+            <div class="col-lg-2 col-md-10 d-flex justify-content-sm-center align-items-sm-center">
                 <a class="btn" href="">learn More</a>
             </div>
         </div>
@@ -307,7 +307,7 @@
     </div>
 </div>
 <div class="news-event wow animate__animated animate__fadeInUpBig">
-    <div class="container d-flex my-5">
+    <div class="container d-flex mt-5">
         <div class="news d-flex flex-column">
             <div class="row">
                 <div class="col">
@@ -351,7 +351,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="{{ asset('Frontend') }}/Assests/black-news.png" alt="...">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-center align-content-center">
                             <h5 class="card-title">Event 1</h5>
                             <p class="card-text">Some quick example text to build on the card title.</p>
                         </div>
@@ -360,7 +360,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="{{ asset('Frontend') }}/Assests/black-news.png" alt="...">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-center align-content-center">
                             <h5 class="card-title">Event 1</h5>
                             <p class="card-text">Some quick example text to build on the card title.</p>
                         </div>
@@ -369,15 +369,16 @@
                 <div class="col">
                     <div class="card">
                         <img src="{{ asset('Frontend') }}/Assests/black-news.png" alt="...">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-center align-content-center">
                             <h5 class="card-title">Event 1</h5>
                             <p class="card-text">Some quick example text to build on the card title.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col btn-section">
+                {{-- it will be use after content will update --}}
+                {{-- <div class="col btn-section">
                     <a class="btn" href="">learn more</a>
-                </div>
+                </div> --}}
 
             </div>
         </div>

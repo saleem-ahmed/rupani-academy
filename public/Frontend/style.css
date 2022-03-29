@@ -26,6 +26,12 @@
 .Nav-bar .rupani-school img {
     width: 68.58px;
 }
+.nav-top .col a:hover i{
+    color: #7f1416;
+    background-color: #FFFFFF;
+    padding: 1px 1px;
+    /* border-radius: 50%; */
+}
 /* new nav  */
 a {
     text-decoration: none;
@@ -52,7 +58,7 @@ li {
     /* justify-content: center; */
     align-items: center;
 }
-.Nav-bar .col-8 ul{
+.Nav-bar .col-8 ul {
     margin-bottom: 0% !important;
 }
 .menu {
@@ -60,25 +66,30 @@ li {
     gap: 1em;
     font-size: 15px;
 }
-.menu li.active {
+/* .menu li.active {
     box-shadow: inset 0 -2px 0 rgb(219, 15, 15);
     transition: 0.3s ease;
-}
+} */
 .menu li:hover {
     box-shadow: inset 0 -2px 0 rgb(219, 15, 15);
-
     color: rgb(219, 15, 15) !important;
+    padding: 20px 8px;
 }
 .menu li:hover a {
     color: rgb(219, 15, 15) !important;
+    
 }
 .menu li {
-    padding: 5px 8px;
+    padding: 20px 8px;
     transition: 0.3s ease;
 }
-li.services {
+.menu .dropdown-content li{
+    padding: 0px 8px;
+} 
+
+/* li.services {
     padding: 0px;
-}
+} */
 .dropdown-menu {
     background: linear-gradient(90.62deg, #ebd7dc 0%, #110f38 100%);
 }
@@ -96,13 +107,73 @@ input[type="checkbox"] {
     user-select: none;
     color: #ffffff;
 }
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 65px;
+    background: linear-gradient(
+        180deg,
+        rgba(12, 10, 54, 0.45) 0%,
+        rgba(121, 118, 173, 0.35) 100%
+    ) !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #ffffff !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: transparent;
+    color: #ffffff !important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #ffffff !important;
+}
+.dropdown:hover .dropdown-content .dropdown-item {
+    display: block;
+    color: #ffffff !important;
+}
+.nav-bar .dropdown-content a:hover {
+    color: #ffffff !important;
+}
+
 /* APPLYING MEDIA QUERIES */
+
 @media (max-width: 768px) {
     /* ul.nav-links {
         position: relative;
         left: 163px;
     } */
-    .Nav-bar .rupani-acdmey img ,
+    .Nav-bar .rupani-acdmey img,
     .Nav-bar .rupani-school img {
         width: 40px;
     }
@@ -130,35 +201,6 @@ input[type="checkbox"] {
     .hamburger {
         display: block;
     }
-    .dropdown {
-        left: 50%;
-        top: 30px;
-        transform: translateX(35%);
-    }
-    /* .menu .services .dropdown-menu {
-        background-color: blue !important;
-        border:none !important;
-        display: none;
-    } */
-    .dropdown {
-        background-color: rgb(1, 139, 139);
-        padding: 1em 0;
-        position: absolute;
-        display: none;
-        border-radius: 8px;
-        top: 35px;
-    }
-    .dropdown li + li {
-        margin-top: 10px;
-    }
-    .dropdown li {
-        padding: 0.5em 1em;
-        width: 8em;
-        text-align: center;
-    }
-    .dropdown li:hover {
-        background-color: #1a1b1b;
-    }
 }
 /* new nav  */
 /* media quries of navbavr */
@@ -171,6 +213,11 @@ input[type="checkbox"] {
     }
     .Nav-bar .col-8 .menu li {
         font-size: 12px;
+    }
+}
+@media screen and (max-width:992px) {
+    .Nav-bar .col-8 ul li a{
+        font-size: 9px;
     }
 }
 @media screen and (max-width: 769px) {
@@ -293,6 +340,9 @@ input[type="checkbox"] {
     list-style: none;
     height: 6rem;
 }
+.home-header .carousel-dark .carousel-indicators [data-bs-target]:hover {
+    background-color: transparent !important;
+}
 /* media quries of navbavr */
 @media screen and (max-width: 1131px) {
     .home-header .carousel-caption {
@@ -353,19 +403,35 @@ input[type="checkbox"] {
         transform: translateX(2px);
     }
 }
-
+@media (max-width: 793px) {
+    .home-header .carousel-caption {
+        bottom: 7.5rem !important;
+        left: 3% !important;
+    }
+    .home-header .carousel-control-next,
+    .home-header .carousel-control-prev {
+        width: 19% !important;
+    }
+    .home-header .fa-angle-left,
+    .home-header .fa-angle-right {
+        font-size: 2.5rem;
+    }
+}
 @media screen and (max-width: 769px) {
+    .home-header .carousel-inner .carousel-item img {
+        margin-top: 50px !important;
+    }
     .home-header {
         margin-top: 57px;
     }
-    .home-header .carousel-caption{
+    .home-header .carousel-caption {
         bottom: 9rem !important;
         left: 5% !important;
     }
     .home-header .carousel-control-next,
     .home-header .carousel-control-prev {
-        width: 21% !important;
-    } 
+        width: 29% !important;
+    }
 }
 @media screen and (max-width: 427px) {
     /* .home-header {
@@ -374,7 +440,7 @@ input[type="checkbox"] {
     .home-header .carousel-inner .carousel-item img {
         margin-top: 55px !important;
     } */
-    .home-header{
+    .home-header {
         display: none;
     }
 }
@@ -480,7 +546,6 @@ input[type="checkbox"] {
     line-height: 25px;
     padding-right: 25px;
     color: #000000;
-    
 }
 .about-section .col-5 img {
     padding-left: 20px;
@@ -584,11 +649,11 @@ input[type="checkbox"] {
 .mission .carousel-indicators [data-bs-target] {
     text-indent: 0 !important;
     background-color: #7f1416 !important;
-    height: auto !important;
+    /* height: auto !important; */
     color: #ffffff;
     margin-right: 22px !important;
     border-radius: 50%;
-    padding: 10px !important;
+    padding: 20px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -651,7 +716,6 @@ input[type="checkbox"] {
     .mission .carousel-control-next,
     .mission .carousel-control-prev {
         top: 422px !important;
-       
     }
 }
 @media screen and (max-width: 425px) {
@@ -673,7 +737,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
 }
-.campus-life .col-5 h2 {
+.campus-life .col-lg-5 h2 {
     font-weight: bold;
     font-size: 34px;
     line-height: 46px;
@@ -683,10 +747,12 @@ input[type="checkbox"] {
     width: fit-content;
     /* text-align: center;   */
 }
-.campus-life .col .card {
-    padding: 12px 12px;
-    background: #0d0a4f;
+.campus-life .card {
+    padding: 12px 12px !important;
+    background: #0d0a4f !important;
     width: 90%;
+    position: unset !important;
+
 }
 .campus-life .card-one {
     transform: rotate(-7.64deg);
@@ -695,8 +761,14 @@ input[type="checkbox"] {
 .campus-life .card-one:hover {
     transform: rotate(0deg);
 }
-/* .campus-life .card-one:hover .card {
-} */
+.campus-life .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+}
 
 .campus-life .card-two {
     transform: translateY(-20px);
@@ -739,8 +811,28 @@ input[type="checkbox"] {
     color: #7f1416;
 }
 @media screen and (max-width: 769px) {
-    .campus-life {
-        display: none !important;
+    .campus-life .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .campus-life .cards .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .campus-life .card {
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    .campus-life .card-one,
+    .campus-life .card-two,
+    .campus-life .card-three {
+        transform:unset !important;
+    }
+    .campus-life a{
+        width: 100%;
     }
 }
 /* campus life section ends here */
@@ -945,17 +1037,21 @@ input[type="checkbox"] {
 .news-event .card {
     display: flex;
     flex-direction: row !important;
-    height: 122px;
+    height: auto;
     box-sizing: border-box;
     background-color: #fff1d2;
     box-shadow: 2px 2px 5px -1px rgba(55, 55, 55, 0.28);
     margin-bottom: 15px;
 }
 .news-event .card img {
-    width: 50%;
+    width: 43%;
+    height: 50%;
 }
-.news-event .card p {
-    font-size: 12px;
+.news-event .card .card-title {
+    font-size: 18px;
+}
+.news-event .card .card-text {
+    font-size: 15px;
 }
 .news-event .col .btn {
     background-color: #7f1416;
@@ -972,6 +1068,23 @@ input[type="checkbox"] {
     background: transparent;
     color: #7f1416;
 }
+.card-body {
+    padding: 10px 10px !important;
+}
+@media screen and (max-width: 1200px) {
+    .news-event .card .card-text {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .news-event .card .card-title {
+        font-size: 10px;
+    }
+    .news-event .card .card-text {
+        font-size: 9px;
+    }
+}
+
 @media screen and (max-width: 769px) {
     .news-event {
         padding: 1rem !important;
@@ -989,6 +1102,13 @@ input[type="checkbox"] {
         margin-top: 25px;
         margin-left: 0px;
     }
+    .news-event .card .card-title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .news-event .card .card-text {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 376px) {
     .news-event {
@@ -1000,7 +1120,7 @@ input[type="checkbox"] {
     .news-event .events .card-title {
         font-size: 15px !important;
     }
-    .news-event .card p {
+    .news-event .card .card-text {
         font-size: 8px;
     }
 }
@@ -1183,9 +1303,8 @@ input[type="checkbox"] {
     font-weight: 700;
     font-size: 44px;
     letter-spacing: 0.04em;
-    
+
     color: #f8f8f8;
 }
-
 
 /* about us page */

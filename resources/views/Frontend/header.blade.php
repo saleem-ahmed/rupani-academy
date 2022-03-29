@@ -50,11 +50,11 @@
                             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                             <!-- NAVIGATION MENUS -->
                             <div class="menu">
-                                <li class="nav-item"><a href="">Home</a></li>
-                                <li class="services ">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                                <li class="nav-item"><a href="/">Home</a></li>
+                                <li class="dropdown">
+                                  <a class="dropbtn" href="/" >About us</a>
                                   <!-- DROPDOWN MENU -->
-                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                   <ul class="dropdown-content" id="dp-menu">
                                     <li><a  class="dropdown-item" href="/">Background </a></li>
                                     <li><a class="dropdown-item" href="/">Principal's Message</a></li>
                                   </ul> 
