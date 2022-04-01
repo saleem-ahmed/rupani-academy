@@ -52,17 +52,18 @@
                             <div class="menu">
                                 <li class="nav-item"><a href="/">Home</a></li>
                                 <li class="dropdown">
-                                  <a class="dropbtn" href="/" >About us</a>
+                                  <a class="dropbtn" href="{{ url('/about') }}" >About us</a>
                                   <!-- DROPDOWN MENU -->
                                    <ul class="dropdown-content" id="dp-menu">
-                                    <li><a  class="dropdown-item" href="/">Background </a></li>
-                                    <li><a class="dropdown-item" href="/">Principal's Message</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/about/#background">Background</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/about/#principal-message">Principal's Message</a></li>
                                   </ul> 
                                 </li>
                               <li class="nav-item"><a href="">Policy</a></li>
                               <li class="nav-item"><a href="">Campus Life</a></li>
                               <li class="nav-item"><a href="">Curricula</a></li>
                               <li class="nav-item"><a href="">Career</a></li>    
+                              <li class="btn"><a  href="">admmission</a></li>
                             </div>
                           </ul>
                     </div>
@@ -73,7 +74,3 @@
             </div>
         </div>
     </div>
-
-
-    {{-- new --}}
-    
