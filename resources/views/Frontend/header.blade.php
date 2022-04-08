@@ -7,12 +7,11 @@
     <title>Rupani Academy</title>
     <link rel="shortcut icon" href="{{ asset('Frontend') }}/Assests/navbar_Rupani_Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('Frontend') }}/style.css" />
-    <link rel="stylesheet" href="{{ asset('Frontend/Assests/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('Frontend/Assests/fontawesome-free-6.1.0-web/fontawesome-free-6.1.0-web/css/all.css') }}">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet"
+        href="{{ asset('Frontend/Assests/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('Frontend/Assests/fontawesome-free-6.1.0-web/fontawesome-free-6.1.0-web/css/all.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -26,10 +25,11 @@
                         <span><i class="px-1 fa  fa-envelope"></i> info@rupaniacademy.org</span>
                         {{-- <span><i class="px-1 fa  fa-envelope"></i> rupaniacademy@gmail.com</span> --}}
                     </div>
-                    
-                    <div class="col d-flex justify-content-center" >
+
+                    <div class="col d-flex justify-content-center">
                         <a class="text-white" href=""><i class="fa-brands fa-instagram me-4"></i></a>
-                        <a class="text-white" href=""><i class="fa-brands fa-facebook me-4"></i></a>
+                        <a class="text-white" href="https://www.facebook.com/rupani.academy/"><i
+                                class="fa-brands fa-facebook me-4"></i></a>
                         <a class="text-white" href=""><i class="fa-brands fa-twitter-square me-4"></i></a>
                         <a class="text-white" href=""><i class="fa-brands fa-youtube me-4"></i></a>
                         <a class="text-white" href=""><i class="fa-brands fa-google-plus me-4"></i></a>
@@ -52,20 +52,30 @@
                             <div class="menu">
                                 <li class="nav-item"><a href="/">Home</a></li>
                                 <li class="dropdown">
-                                  <a class="dropbtn" href="{{ url('/about') }}" >About us</a>
-                                  <!-- DROPDOWN MENU -->
-                                   <ul class="dropdown-content" id="dp-menu">
-                                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/about/#background">Background</a></li>
-                                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/about/#principal-message">Principal's Message</a></li>
-                                  </ul> 
+                                    <a class="dropbtn" href="{{ url('/about') }}">About us</a>
+                                    <!-- DROPDOWN MENU -->
+                                    <ul class="dropdown-content" id="dp-menu">
+                                        <li><a class="dropdown-item"
+                                                href="http://127.0.0.1:8000/about/#background">Background</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="http://127.0.0.1:8000/about/#principal-message">Principal's
+                                                Message</a></li>
+                                    </ul>
                                 </li>
-                              <li class="nav-item"><a href="">Policy</a></li>
-                              <li class="nav-item"><a href="">Campus Life</a></li>
-                              <li class="nav-item"><a href="">Curricula</a></li>
-                              <li class="nav-item"><a href="">Career</a></li>    
-                              <li class="btn"><a  href="">admmission</a></li>
+                                <li class="dropdown">
+                                    <a class="dropbtn" href="">Policy</a>
+                                    <!-- DROPDOWN MENU -->
+                                    <ul class="dropdown-content" id="dp-menu">
+                                        <li><a class="dropdown-item" href="{{ url('/policy') }}">Admission Policy</a></li>
+                                        {{-- <li><a class="dropdown-item" href="">Principal's Message</a></li> --}}
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="">Campus Life</a></li>
+                                <li class="nav-item"><a href="">Curricula</a></li>
+                                <li class="nav-item"><a href="">Career</a></li>
+                                <li class="btn"><a href="">admmission</a></li>
                             </div>
-                          </ul>
+                        </ul>
                     </div>
                     <div class="col-2 rupani-school d-flex justify-content-center">
                         <img src="{{ asset('Frontend') }}/Assests/navbar_school.png" alt="rupani-school-logo">

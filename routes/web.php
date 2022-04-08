@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('layouts.about');
 });
+Route::get('/policy', function () {
+    return view('layouts.policy');
+});

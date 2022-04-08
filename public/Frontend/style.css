@@ -72,7 +72,7 @@ li {
 .menu .nav-item:hover {
     box-shadow: inset 0 -2px 0 rgb(219, 15, 15);
     color: rgb(219, 15, 15) !important;
-    padding: 20px 8px;
+    padding: 20px 3px;
 }
 .menu .btn :hover {
     /* box-shadow: inset 0 -2px 0 rgb(219, 15, 15); */
@@ -83,11 +83,11 @@ li {
     color: rgb(219, 15, 15) !important;
 }
 .menu .nav-item {
-    padding: 20px 8px;
+    padding: 20px 5px;
     transition: 0.3s ease;
 }
 li.dropdown {
-    padding: 20px 5px;
+    padding: 20px 3px;
 }
 li.dropdown:hover {
     box-shadow: inset 0 -2px 0 rgb(219, 15, 15);
@@ -96,7 +96,6 @@ li.dropdown:hover {
 .menu .btn {
     padding: 20px 8px;
     transition: 0.3s ease;
-    
 }
 .menu .btn a {
     padding: 8px 8px;
@@ -115,7 +114,6 @@ li.dropdown:hover {
 .dropdown-menu {
     background: linear-gradient(90.62deg, #ebd7dc 0%, #110f38 100%);
 }
-
 
 /* DROPDOWN MENU */
 
@@ -470,7 +468,8 @@ input[type="checkbox"] {
 }
 /* Header section ends here */
 
-apply now section starts here .apply-now {
+/* apply now section starts here  */
+.apply-now {
     background: #fff1d2;
     padding: 57px 0;
 }
@@ -1259,7 +1258,7 @@ apply now section starts here .apply-now {
 }
 
 /* principal message */
-.principal-message{
+.principal-message {
     background: url(./Assests/principal-back.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1310,3 +1309,134 @@ apply now section starts here .apply-now {
 }
 
 /* principal message */
+
+/* policy page start here */
+.policy p {
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+.policy h2 {
+    /* text-align: justify; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    /* line-height: 38px; */
+}
+@media screen and (max-width: 769px) {
+    .policy h2 {
+        font-size: 23px;
+    }
+    .policy p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 519px) {
+    .policy h2 {
+        font-size: 16px;
+    }
+    .policy p {
+        font-size: 12px;
+    }
+}
+.policy-header {
+    background: url(./Assests/policy-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.policy-header .policy-content {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.policy-header .policy-content h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: 0.04em;
+
+    color: #f8f8f8;
+}
+
+.policy-header ul {
+    list-style: lower-alpha !important;
+}
+
+.policy .policy-card {
+    padding: 27px 28px;
+    transition: .3s;
+}
+.policy .policy-card:hover {
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.policy .policy-card .w-100 {
+    width: 18% !important;
+}
+.policy .policy-card .w-25 {
+    width: 12% !important;
+}
+.policy .policy-card .w-50 {
+    width: 26% !important;
+}
+.policy .policy-card .param p {
+    font-size: 14px;
+}
+.policy .policy-card h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+.policy h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+}
+.policy table tbody {
+    background: rgba(255, 255, 255, 0.0001) !important;
+}
+
+@media screen and (max-width: 1025px) {
+    .policy-header {
+        height: 50vh;
+    }
+    .policy-header .policy-content {
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 769px) {
+    .policy-header {
+        height: 30vh;
+        margin-top: 57px;
+    }
+    .policy-header .policy-content {
+        height: 20vh;
+    }
+    .policy-header .policy-content h2 {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 427px) {
+    .policy-header {
+        margin-top: 95px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .policy-header {
+        height: 20vh;
+    }
+    .policy-header .policy-content {
+        height: 15vh;
+    }
+    .policy-header .policy-content {
+        font-size: 27px;
+    }
+}
