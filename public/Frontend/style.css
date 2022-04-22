@@ -20,6 +20,9 @@
     font-size: 1.5rem;
 }
 .Nav-bar {
+    /* position: fixed;
+    z-index: 10;
+    width: 100%; */
     background: linear-gradient(90.62deg, #f2eeef 0%, #110f38 100%);
 }
 .Nav-bar .rupani-acdmey img,
@@ -172,20 +175,21 @@ input[type="checkbox"] {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: transparent;
-    color: #ffffff !important;
+    /* color: #7f1416 !important; */
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
 }
 .dropdown:hover .dropdown-content .dropdown-item {
     display: block;
     color: #ffffff !important;
 }
 .nav-bar .dropdown-content a:hover {
-    color: #ffffff !important;
+    color: #7f1416 !important;
+    box-shadow: inset 0 -2px 0 rgb(219, 15, 15);
 }
 
 /* APPLYING MEDIA QUERIES */
@@ -1370,11 +1374,12 @@ input[type="checkbox"] {
 
 .policy .policy-card {
     padding: 27px 28px;
-    transition: .3s;
+    transition: 0.3s;
+    border-radius: 4px;
 }
 .policy .policy-card:hover {
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
--webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
 }
 .policy .policy-card .w-100 {
     width: 18% !important;
@@ -1440,3 +1445,168 @@ input[type="checkbox"] {
         font-size: 27px;
     }
 }
+
+/* assesment page starts here */
+.assement-header {
+    background: url(./Assests/policy-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.assement-header .assement-content {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.assement-header .assement-content h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: 0.04em;
+    color: #f8f8f8;
+}
+.assement h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+}
+.assement p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    text-align: justify !important;
+}
+@media screen and (max-width: 1025px) {
+    .assement-header {
+        height: 50vh;
+    }
+    .assement-header .assement-content {
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 769px) {
+    .assement-header {
+        height: 30vh;
+        margin-top: 57px;
+    }
+    .assement-header .assement-content {
+        height: 20vh;
+    }
+    .assement-header .assement-content h2 {
+        font-size: 28px;
+    }
+    .assement h3 {
+        font-size: 18px;
+    }
+    .assement p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 427px) {
+    .assement-header {
+        margin-top: 95px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .assement-header {
+        height: 20vh;
+    }
+    .assement-header .assement-content {
+        height: 15vh;
+    }
+    .assement-header .assement-content {
+        font-size: 27px;
+    }
+}
+
+/* flip cards */
+
+
+.flip-card .box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.flip-card .box .body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+        border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.flip-card .box .body .imgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flip-card .box .body .imgContainer h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.flip-card .box .body .imgContainer img {
+    width: 20%;
+    object-fit: cover;
+}
+
+.flip-card .box .body .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;  
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    /* border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px; */
+}
+
+.flip-card .box:hover .body {
+    transform: rotateY(180deg);
+}
+
+.flip-card .box .body .content div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: white;
+    height: auto;
+    color: #000000;
+    overflow-y: scroll;
+}
+
+.flip-card .box .body .content div h3 {
+    letter-spacing: 1px;
+}
+/* flip cards */
+
+/* assesment page ends here */

@@ -22,3 +22,6 @@ Route::get('/about', function () {
 Route::get('/policy', function () {
     return view('layouts.policy');
 });
+Route::get('/assessment', function () {
+    return view('layouts.assement-policy');
+});

@@ -145,7 +145,7 @@
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-8  wow animate__animated animate__fadeInUpBig">
-                            <h2>Our Vision</h2>
+                            <h2>Our MISSION </h2>
                             <p>To provide quality education focusing on life skills and personality development for the
                                 upbringing of a generation of productive and contributing global citizens.</p>
                             <a class="btn" href="">learn More</a>
@@ -160,9 +160,8 @@
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-8  wow animate__animated animate__fadeInUpBig">
-                            <h2>Our Mission</h2>
-                            <p>Provision of quality education of the International standards to the young generation for
-                                sustainable development of locale, Pakistan, and the Global Community.</p>
+                            <h2>Our VISION</h2>
+                            <p>PA sustainable, educated, and pluralistic society for future generations.</p>
                             <a class="btn" href="">learn More</a>
                         </div>
                         <div class="col-4 mission-img  wow animate__animated animate__fadeInUpBig">

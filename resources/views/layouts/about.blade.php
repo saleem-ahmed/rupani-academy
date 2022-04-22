@@ -4,42 +4,6 @@
         <h2>ABOUT US</h2>
     </div>
 </div>
-{{-- <div class="approch p-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-6 mx-auto">
-                <h2>Approaches To Learning</h2>
-            </div>
-            <div class="row mt-5 mx-auto">
-                <div class="col mb-3 d-flex flex-column justify-content-center align-items-center">
-                    <img src="{{ asset('Frontend') }}/Assests/thinking.png" alt="">
-                    <h3>Thinking <br>
-                        Skills</h3>
-                </div>
-                <div class="col mb-3 d-flex flex-column justify-content-center align-items-center flex-wrap">
-                    <img src="{{ asset('Frontend') }}/Assests/socail.png" alt="">
-                    <h3>Social <br>
-                        Skills</h3>
-                </div>
-                <div class="col mb-3 d-flex flex-column justify-content-center align-items-center">
-                    <img src="{{ asset('Frontend') }}/Assests/commu.png" alt="">
-                    <h3>Communication <br>
-                        Skills</h3>
-                </div>
-                <div class="col mb-3 d-flex flex-column justify-content-center align-items-center">
-                    <img src="{{ asset('Frontend') }}/Assests/self.png" alt="">
-                    <h3>Self-Management <br>
-                        Skills</h3>
-                </div>
-                <div class="col mb-3 d-flex flex-column justify-content-center align-items-center">
-                    <img src="{{ asset('Frontend') }}/Assests/research.png" alt="">
-                    <h3>Research <br>
-                        Skills</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
 <div class="container">
     <div class="row flex-lg-row flex-md-column">
         <div class="col-lg-6 col-md-12 d-flex justify-content-center aligin-items-center my-5" >
@@ -82,66 +46,6 @@
 
         </div>
     </div>
-</div>
-<div class="mission">
-    <div id="mission-carosel" class="carousel slide" data-bs-ride="carousel">
-
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#mission-carosel" data-bs-slide-to="1" aria-label="Slide 1">
-                <i class="fa-solid fa-check-double"></i>
-            </button>
-            <button type="button" data-bs-target="#mission-carosel" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 2">
-                <i class="fa-solid fa-eye"></i>
-            </button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-8  wow animate__animated animate__fadeInUpBig">
-                            <h2>Our Vision</h2>
-                            <p>To provide quality education focusing on life skills and personality development for the
-                                upbringing of a generation of productive and contributing global citizens.</p>
-                            <a class="btn" href="">learn More</a>
-                        </div>
-                        <div class="col-4 mission-img  wow animate__animated animate__fadeInUpBig">
-                            <img class="img-fluid" src="{{ asset('Frontend') }}/Assests/mission-img.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-8  wow animate__animated animate__fadeInUpBig">
-                            <h2>Our Mission</h2>
-                            <p>Provision of quality education of the International standards to the young generation for
-                                sustainable development of locale, Pakistan, and the Global Community.</p>
-                            <a class="btn" href="">learn More</a>
-                        </div>
-                        <div class="col-4 mission-img  wow animate__animated animate__fadeInUpBig">
-                            <img class="img-fluid" src="{{ asset('Frontend') }}/Assests/mission-img.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#mission-carosel" data-bs-slide="prev">
-            <span aria-hidden="true">
-                <i class="fa-solid fa-arrow-left-long"></i>
-            </span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mission-carosel" data-bs-slide="next">
-            <span aria-hidden="true">
-                <i class="fa-solid fa-arrow-right-long"></i>
-            </span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    {{-- <hr class="bg-danger" style="height: 1px; width: 100%"> --}}
 </div>
 <div class="row" id="principal-message"></div>
 <div class="container principal-message" >
@@ -195,6 +99,25 @@
             thoughtfulness, the empathy, the element of care in our culture will be the focal point in education
             processes at Rupani Academy, ensuring that our future generations will lead us positively.
         </p>
+    </div>
+</div>
+<div class="my-5 w-100" style="border: 1px solid #F9B720; box-sizing:border-box;overflow:hidden;">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-lg-10">
+                <h3><b>Works Cited</b></h3>
+                <p>
+                    International Baccalaureate Organization. “5 ways you Could Support Your Child as a PYP
+                    Parent.” sso.ibo.org,
+                    International Baccalaureate Organization, 2020,
+                    resources.ibo.org/data/p_0_pypxx_com_2008_2_e.pdf. Accsessed 14 Sept, 2021.
+                    -.”PYP:From Principles into Practice.” sso.ibo.org, International Baccalaureate
+                    Organization, Oct, 2019, recources.ibo.org/pyp. Accessed 14 Sept, 2021.
+                    Taryn Bond-Clegg, “Pedagogy 101 for PYP Parents.” Making Good Humans, 30 May, 2020,
+                    makinggoodhumans.wordpress.com/2020/05/30/pedagogy-101-for-parents/. Accessed 14 Sept, 2021.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 @include('Frontend.footer')

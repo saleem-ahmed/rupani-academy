@@ -67,13 +67,13 @@
                                     <!-- DROPDOWN MENU -->
                                     <ul class="dropdown-content" id="dp-menu">
                                         <li><a class="dropdown-item" href="{{ url('/policy') }}">Admission Policy</a></li>
-                                        {{-- <li><a class="dropdown-item" href="">Principal's Message</a></li> --}}
+                                        <li><a class="dropdown-item" href="{{ url('/assessment') }}">Assessment Policy</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a href="">Campus Life</a></li>
                                 <li class="nav-item"><a href="">Curricula</a></li>
                                 <li class="nav-item"><a href="">Career</a></li>
-                                <li class="btn"><a href="">admmission</a></li>
+                                {{-- <li class="btn"><a href="">admmission</a></li> --}}
                             </div>
                         </ul>
                     </div>

@@ -88,7 +88,7 @@
             </div>
 
         </div>
-        <div class="row flex-lg-row flex-md-column justify-content-center mb-5">
+        <div class="row flex-lg-row flex-sm-column justify-content-center mb-5">
             <div
                 class="col-lg-6 col-md-12 policy-card border border-dark d-flex flex-column justify-content-space-betwwen align-items-center my-3">
                 <img class="w-50" src="{{ asset('Frontend/Assests/policy-img4.png') }}" alt="policy img2">
@@ -110,7 +110,8 @@
                     CHILDREN’S AGE FOR ADMISSION
                 </h3>
                 <p class="text-center">
-                    Rupani Academy ensures that, for the admission in Primary Years Program (PYP) against each grade is in accordance with the following
+                    Rupani Academy ensures that, for the admission in Primary Years Program (PYP) against each grade is
+                    in accordance with the following
                 </p>
             </div>
         </div>
@@ -119,50 +120,50 @@
                 <div class="col-lg-10 col-md-12">
                     <table class="table text-center" style="background-color:antiquewhite">
                         <thead class="table-dark">
-                          <tr>
-                            <th class="text-center">Grades</th>
-                            <th class="text-center">Age Bracket</th>
-                          </tr>
+                            <tr>
+                                <th class="text-center">Grades</th>
+                                <th class="text-center">Age Bracket</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                              <td>Pre-primary I</td>
-                              <td>	3 - 4 years</td>
-                          </tr>
-                          <tr>
-                              <td>Pre-Primary II</td>
-                              <td>	4 - 5 years </td>
-                          </tr>
-                          <tr>
-                              <td>Pre-primary III</td>
-                              <td>	5 -6 years</td>
-                          </tr>
-                          <tr>
-                              <td>Grade I</td>
-                              <td>	6 - 7 years</td>
-                          </tr>
-                          <tr>
-                              <td>Grade II</td>
-                              <td>	7 - 8 years</td>
-                          </tr>
-                          <tr>
-                              <td>Grade III</td>
-                              <td>	8 - 9 years</td>
-                          </tr>
-                          <tr>
-                              <td>Grade IV</td>
-                              <td>  9-10 years</td>
-                          </tr>
-                          <tr>
-                              <td>Grade V</td>
-                              <td>  10-11 years</td>
-                          </tr>
-                          <tr>
-                              <td>Grade VI</td>
-                              <td>  11-12 years</td>
-                          </tr>
+                            <tr>
+                                <td>Pre-primary I</td>
+                                <td> 3 - 4 years</td>
+                            </tr>
+                            <tr>
+                                <td>Pre-Primary II</td>
+                                <td> 4 - 5 years </td>
+                            </tr>
+                            <tr>
+                                <td>Pre-primary III</td>
+                                <td> 5 -6 years</td>
+                            </tr>
+                            <tr>
+                                <td>Grade I</td>
+                                <td> 6 - 7 years</td>
+                            </tr>
+                            <tr>
+                                <td>Grade II</td>
+                                <td> 7 - 8 years</td>
+                            </tr>
+                            <tr>
+                                <td>Grade III</td>
+                                <td> 8 - 9 years</td>
+                            </tr>
+                            <tr>
+                                <td>Grade IV</td>
+                                <td> 9-10 years</td>
+                            </tr>
+                            <tr>
+                                <td>Grade V</td>
+                                <td> 10-11 years</td>
+                            </tr>
+                            <tr>
+                                <td>Grade VI</td>
+                                <td> 11-12 years</td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
             </div>
         </div>
